@@ -1,5 +1,3 @@
-VS Code studio
-Atom
 
 from zipfile import ZipFile
 from google.cloud import storage
