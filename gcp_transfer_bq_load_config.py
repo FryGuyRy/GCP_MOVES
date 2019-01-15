@@ -1,8 +1,8 @@
-BUCKETNAME = 'gerberlife-us'
-FILENAME = 'UNICA_PARALLEL_REPORT_20190109.csv.zip'
-DIRECTORY = 'delve strategic/'
-UNZIP = True
+BUCKETNAME = '' # Just Root Bucket Name not ensuing path
+FILENAME = 'FILENAME.csv.zip' # Original File name, to be moved from Storage to local and back before loading to BQ
+DIRECTORY = 'delve strategic/' # Directory location/path after root bucket name
+UNZIP = True #'True' to unzip 'False' if not compressed
 
-DATASET_ID = 'delve_strategic'
-URI = 'gs://gerberlife-us/delve strategic/'
-TABLE = 'PARALLEL_REPORT_DAILY_v3'
+DATASET_ID = '' # Dataset Id is the BQ "Database/Partition"
+URI = 'gs:// BUCKETNAME/DIRECTORY/' # Root bucketname and directory path in GCS
+TABLE = 'OUTPUT_TABLENAME' # BQ Final Table Name
